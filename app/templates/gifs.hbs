@@ -1,0 +1,8 @@
+<h1> gifs route here </h1>
+{{#each model as |gif|}}
+<div class="gifs-list">
+    <li>ID={{gif.id}}, TITLE={{gif.title}}, <img width="150px" src="{{gif.url}}" /></li>
+</div>
+{{/each}}
+
+{{outlet}}
